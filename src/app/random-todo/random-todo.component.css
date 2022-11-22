@@ -1,0 +1,14 @@
+.random {
+  background: #274d73;
+  color: white;
+  padding: 10px;
+  width: 520px;
+}
+
+.random span {
+  font-weight: bold;
+}
+
+li.random::marker {
+  color: #274d73;
+}

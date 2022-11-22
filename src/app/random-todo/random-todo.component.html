@@ -1,0 +1,7 @@
+<li class="random">
+  <span>RANDOM TASK: </span>
+  <ng-container *ngIf="randomTodo$ | async as randomTodo; else skeleton">
+    {{ randomTodo.todo }}
+  </ng-container>
+  <ng-template #skeleton>LOADING.....</ng-template>
+</li>

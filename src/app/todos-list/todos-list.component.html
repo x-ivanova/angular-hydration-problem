@@ -1,0 +1,10 @@
+<ng-container *ngIf="todos$ | async as todos; else skeleton">
+  <ul>
+    <app-random-todo></app-random-todo>
+    <li *ngFor="let todo of todos.todos">{{ todo.todo }}</li>
+  </ul>
+</ng-container>
+
+<ng-template #skeleton>
+  <div>LOADING.....</div>
+</ng-template>
